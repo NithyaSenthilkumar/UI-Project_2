@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+            function pattern()
+            {
+                var n=document.getElementById('n').value;
+                var i,j;
+                var str;
+                for (i = 1; i <= n; ++i) {
+                for (j = 1; j <= i; ++j) {
+                    str=str+document.write('*');
+                
+                }
+                document.write('<br>')
+                }
+                }
+            
+        </script>
+        <style>
+            body {
+                background-image: url('pic2.png');
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-size: 100% 100%;
+            }
+     </style>
+    </head>
+    <body>
+    <h1> Half Pyramid of *</h1>
+    <label for='n'>Enter n</label>
+    <input type="text" id="n"/>
+    <button onclick="pattern()">get pattern</button>
+    
+    </body>
+</html>

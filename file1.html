@@ -1,0 +1,50 @@
+<html>
+<head>
+    <style>
+            body {
+  background-image: url('pic1.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+     </style>
+     <script>
+         function disp()
+         {
+             var name=document.getElementById('name').value;
+             alert('Hello '+name);
+         }
+        </script>
+        <script>
+         function disp1()
+         {
+             var n=document.getElementById('checkbox').value;
+             alert('you may continue with our website');
+             
+         }
+        </script>
+        
+     </head>
+     <body>
+        <h1 style="font-family:verdana;text-align:center;">PATTERN PRINTING</h1>
+         <label>Enter your name</label>
+         <input type="text" id="name"/><br>
+         
+
+        <br>
+         <button onclick="disp()">Submit</button><br>
+         <br>
+         <p>Do you have an account</p>
+         <input type="Checkbox" id="checkbox">yes</checkbox><br>
+         <button onclick="disp1()">continue</button>   <br>
+        <input type="Checkbox" id="checkbox" >no</checkbox><br>
+        <button onclick="window.location.href='/signup.html'">creat account</button>   
+            <p>Select a pattern type from below</p>
+<ul>
+    <li>Half Pyramid  : <a href="pattern1.html">Click here to view the pattern</a></li>
+    <li> Inverted half pyramid : <a href="pattern2.html">Click here to view the pattern</a></li>
+    <li> Floyd's Triangle : <a href="pattern3.html">Click here to view the pattern</a></li>
+</ul>
+
+     </body>
+     </html>
